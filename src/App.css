@@ -1,0 +1,38 @@
+.book-list {    
+    height: 500px;
+    overflow-y: scroll;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.App{
+    text-align: center;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
+.summary-book{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.book-detail{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+}
+.loading{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
