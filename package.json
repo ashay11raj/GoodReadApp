@@ -9,6 +9,10 @@
     "react-scripts": "2.1.8",
     "xml2js": "0.4.19"
   },
+  "devDependencies": {
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

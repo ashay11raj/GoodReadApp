@@ -27,6 +27,17 @@ class SearchBook extends React.Component {
         selectedBookId: "",
         listOfBooks: []
     }
+    extractBookDetails = (result) => {
+        let bookDetails = {
+            author: result.GoodreadsResponse.book[0].authors[0].author[0].name[0],
+            title: result.GoodreadsResponse.book[0].title[0],
+            img: result.GoodreadsResponse.book[0].image_url[0],
+            ratings: result.GoodreadsResponse.book[0].average_rating[0],
+            description: result.GoodreadsResponse.book[0].description[0].replace(/\<br \/>/g, "\n").replace(/<b>/g, "").replace(/<\/br>/g, "").replace(/<\/b>/g, "")
+        }
+        return bookDetails;
+    }
+    
     getBookList = (input) => {
         this.setState((state, props) => ({
             showLoading: true
@@ -53,19 +64,7 @@ class SearchBook extends React.Component {
             parseString(
                 resp.data,
                 (err, result) => {
-                    let authors = [];
-                    let authorID = [];
-                    result.GoodreadsResponse.book[0].authors.forEach(author => {
-                        authorID.push(author.author[0].id[0]);
-                        authors.push(author.author[0].name[0]);
-                    });
-                    const bookDetails = {
-                        author: result.GoodreadsResponse.book[0].authors[0].author[0].name[0],
-                        title: result.GoodreadsResponse.book[0].title[0],
-                        img: result.GoodreadsResponse.book[0].image_url[0],
-                        ratings: result.GoodreadsResponse.book[0].average_rating[0],
-                        description: result.GoodreadsResponse.book[0].description[0].replace(/\<br \/>/g, "\n").replace(/<b>/g, "").replace(/<\/br>/g, "").replace(/<\/b>/g, "")
-                    }
+                    let bookDetails = this.extractBookDetails(result);
                     this.setState((state, props) => ({
                         bookDetails: bookDetails,
                         showLoading: false
