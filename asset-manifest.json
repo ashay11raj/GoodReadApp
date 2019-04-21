@@ -1,13 +1,13 @@
 {
-  "main.css": "/ashay11raj/GoodReadApp/static/css/main.06fd10b7.chunk.css",
-  "main.js": "/ashay11raj/GoodReadApp/static/js/main.6a726a11.chunk.js",
-  "main.js.map": "/ashay11raj/GoodReadApp/static/js/main.6a726a11.chunk.js.map",
-  "runtime~main.js": "/ashay11raj/GoodReadApp/static/js/runtime~main.b10553d3.js",
-  "runtime~main.js.map": "/ashay11raj/GoodReadApp/static/js/runtime~main.b10553d3.js.map",
-  "static/js/2.96d22692.chunk.js": "/ashay11raj/GoodReadApp/static/js/2.96d22692.chunk.js",
-  "static/js/2.96d22692.chunk.js.map": "/ashay11raj/GoodReadApp/static/js/2.96d22692.chunk.js.map",
-  "index.html": "/ashay11raj/GoodReadApp/index.html",
-  "precache-manifest.a59becde31704c7933deeee64c2797d7.js": "/ashay11raj/GoodReadApp/precache-manifest.a59becde31704c7933deeee64c2797d7.js",
-  "service-worker.js": "/ashay11raj/GoodReadApp/service-worker.js",
-  "static/css/main.06fd10b7.chunk.css.map": "/ashay11raj/GoodReadApp/static/css/main.06fd10b7.chunk.css.map"
+  "main.css": "./static/css/main.06fd10b7.chunk.css",
+  "main.js": "./static/js/main.55d6a0f7.chunk.js",
+  "main.js.map": "./static/js/main.55d6a0f7.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+  "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+  "static/js/2.96d22692.chunk.js": "./static/js/2.96d22692.chunk.js",
+  "static/js/2.96d22692.chunk.js.map": "./static/js/2.96d22692.chunk.js.map",
+  "index.html": "./index.html",
+  "precache-manifest.fed90633df5eda63d45ab411eaeb66ab.js": "./precache-manifest.fed90633df5eda63d45ab411eaeb66ab.js",
+  "service-worker.js": "./service-worker.js",
+  "static/css/main.06fd10b7.chunk.css.map": "./static/css/main.06fd10b7.chunk.css.map"
 }
