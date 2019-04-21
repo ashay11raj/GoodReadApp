@@ -2,6 +2,10 @@ import React from 'react';
 
 
 const summaryBook = (props) => {
+    let average_rating = props.book.average_rating[0];
+    if(average_rating instanceof Object){
+        average_rating = average_rating._;
+    }
     return (
         <div key={props.book.id[0]["_"]} className="summary-book" onClick={() => props.getSelectedBookDetails(props.book.id[0]["_"])}>
             <table>
@@ -17,7 +21,7 @@ const summaryBook = (props) => {
                             <b>Author: </b> {props.book.best_book[0].author[0].name[0]}            
                         </tr>
                         <tr>
-                            <b>Rating: </b> {props.book.average_rating[0]}            
+                            <b>Rating: </b> {average_rating}            
                         </tr>
                     </td>                
                 </tr>
